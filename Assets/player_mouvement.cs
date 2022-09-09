@@ -27,10 +27,11 @@ public class player_mouvement : MonoBehaviour
         playerMove = Input.GetAxisRaw("Vertical");
         _rigidbody.velocity = new Vector3(playerMove * _speed, _rigidbody.velocity.y);
         */
-
+        
         float v = Input.GetAxis("Vertical") * _speed;
         float r = Input.GetAxis("Horizontal") * _speed;
         _rigidbody.velocity = new Vector3(r, 0, v);
-
+        
+        
     }
 }
