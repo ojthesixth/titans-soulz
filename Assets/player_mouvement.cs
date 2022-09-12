@@ -5,7 +5,7 @@ using UnityEngine;
 public class player_mouvement : MonoBehaviour
 {
     private float playerMove;
-    public float _speed = 10f;
+    public float _speed = 7f;
     public GameObject player;
     public Rigidbody2D _rigidbody;
     public BoxCollider2D _collider2D;
@@ -27,11 +27,21 @@ public class player_mouvement : MonoBehaviour
         playerMove = Input.GetAxisRaw("Vertical");
         _rigidbody.velocity = new Vector3(playerMove * _speed, _rigidbody.velocity.y);
         */
+
         
         float v = Input.GetAxis("Vertical") * _speed;
         float r = Input.GetAxis("Horizontal") * _speed;
         _rigidbody.velocity = new Vector3(r, 0, v);
         
-        
+
+        /*
+        if (Input.GetButton("Horizontal"))
+        {
+            GameObject.transform.translate(new Vector3(0, 0, 0.01f));
+            GameObject.transform.translate(new Vector3(-0.01f, 0, 0));
+        }
+
+        (?°?°??? ??? AGH!!!
+        */
     }
 }
