@@ -11904,7 +11904,7 @@ MonoBehaviour:
   player: {fileID: 441817417}
   _rigidbody: {fileID: 441817422}
   _collider2D: {fileID: 441817421}
-  direction: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0}
 --- !u!212 &441817419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16103,11 +16103,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e31a403e255e03438e45baac0494cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 7
+  _speed: 4
   player: {fileID: 2223797854288843131, guid: 0bdca8e5a8339f848b23ca4640b6af44, type: 3}
   _rigidbody: {fileID: 808981998}
   _collider2D: {fileID: 808981997}
-  direction: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0}
 --- !u!1 &916673878
 GameObject:
   m_ObjectHideFlags: 0

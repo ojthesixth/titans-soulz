@@ -5,14 +5,14 @@ using UnityEngine;
 public class player_mouvement : MonoBehaviour
 {
     private float playerMove;
-    public float _speed = 7f;
+    public float _speed = 4f;
     public GameObject player;
     public Rigidbody2D _rigidbody;
     //public BoxCollider2D _collider2D; <-was for square placeholder
     public CapsuleCollider2D _collider2D;
 
 
-    public Vector3 direction;
+    public Vector2 direction;
 
     //public Vector2 velocity = new Vector2();
 
@@ -34,7 +34,7 @@ public class player_mouvement : MonoBehaviour
 
         float v = Input.GetAxis("Vertical") * _speed;
         float r = Input.GetAxis("Horizontal") * _speed;
-        _rigidbody.velocity = new Vector3(r, 0, v);
+        _rigidbody.velocity = new Vector2(r, v);
 
 
         /*
